@@ -1,5 +1,3 @@
-<p align="center"><img src="https://github.com/itsmysterybox/birdboard/blob/main/public/images/logo.svg" width="400"></p>
-
 ## About BirdBoard
 
 BirdBoard is a minimal Basecamp-like project management app in Laravel 5.8 and Vue 2.5 with TDD workflow.
