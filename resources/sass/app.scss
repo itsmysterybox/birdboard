@@ -1,0 +1,32 @@
+// 1rem = 4.5px;
+
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+@tailwind base;
+
+@tailwind components;
+
+@import 'themes/light';
+@import 'themes/dark';
+
+@import 'components/button';
+@import 'components/card';
+@import 'components/dropdown';
+
+.body,
+.button {
+	@apply .text-default;
+}
+
+.section {
+	@apply .px-8;
+}
+
+@tailwind utilities;

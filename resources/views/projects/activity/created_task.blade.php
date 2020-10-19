@@ -1,0 +1,1 @@
+{{ $activity->user->name }} created <span class="text-accent">{{ $activity->subject->body }}</span>
