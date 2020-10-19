@@ -117,6 +117,9 @@ class TriggerActivityTest extends TestCase
 	  $project->tasks[0]->delete();
 
 	  $this->assertCount(3, $project->activity);
-	  $this->assertEquals('deleted_task', $project->activity->last()->description);
+	  tap($project->activity->last(), function ($activity)
+	  {
+	  	$this->assertEquals('deleted_task', $activity->description);
+	  });
 	}
 }
