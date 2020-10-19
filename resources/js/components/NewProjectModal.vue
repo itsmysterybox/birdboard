@@ -98,7 +98,7 @@
 
 			submit() {
 				let len = this.form.tasks.length;
-				if (! this.form.tasks[len-1].body) {
+				if (len > 0 && !this.form.tasks[len-1].body) {
 					this.form.tasks.splice(len-1, 1);
 				}
 				
